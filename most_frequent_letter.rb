@@ -15,7 +15,7 @@ def most_frequent(string)
     end
     index += 1
   end
-  return letters.max_by { |k, v| v }[0]
+  return letters.max_by { |key, value| value }[0]
 end
 
 p most_frequent("peter piper picked a peck of pickled peppers")
